@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="HomePage.css">
+        <script src="Home.js"></script>
+        <script src="Utility.js"></script>
+        <script src="Site_Properties.js"></script>
+        <script src="PayRoll.js"></script>
+        <script src="EmpPayroll.js"></script>
+        <title>
+            Employee Payroll Form
+        </title>
+    </head>
+    <body>
+        <!---uc1-->
+        <header class="header-content header">
+            <div class="logo-content">
+                <img src="EmployeLogo.png" alt="">
+            
+            <div>
+                <span class ="emp-text">EMPLOYEE</span><br>
+                <span class="emp-text emp-payroll">PAYROLL</span>
+            </div>
+        </div>        
+        </header>
+        <div class="main-content">
+            <!---uc2-->
+            <div class="header-content">
+                <div class="emp-detail-text">Employee Details <div class="emp-count">0</div></div>
+                <a href="http://127.0.0.1:5500/EmployeepayRoll.html" class="add-button">
+                    <img src="AddLogo.jpg" alt="">Add User </a>
+            </div>
+            <div class="table-main">
+                <table id="table-display" class="table">
+                    <!---uc3-->
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Department</th>
+                        <th>Salary</th>
+                        <th>Start Date</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td><img class="profile" alt=""
+                        src="Profile3.jpg"></td>
+                        <td>Subodh</td>
+                        <td>Male</td>
+                        <td><div class="dept-label">HR</div>
+                        <div class="dept-label">Finance</div></td>
+                        <td>3000000</td>
+                        <td>1 Nov 2020</td>
+                        <td>
+                            <img id="1" onclick="remove(this)"  alt="delete"
+                            src="DeleteLogo.jpg">
+                            <img id="1" alt="edit" onclick="update(this)" alt="create"
+                            src="EditLogo.jpg">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+       
+    </body>
+</html>
